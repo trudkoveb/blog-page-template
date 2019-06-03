@@ -1,0 +1,188 @@
+header, footer
+    background-color: #fff
+
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 30px 5em
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05)
+
+    .logo
+        display: flex
+        align-items: flex-end
+        img
+            margin-right: 20px
+        p
+            font-family: $font-bold
+            font-size: 26px
+            color: #000
+            span
+                color: $color-default
+
+    nav ul
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        li:not(:last-child)
+            margin-right: 40px
+        a
+            font-size: 16px
+            color: #263035
+            &:hover
+                border-bottom: 1px solid #263035
+
+    button
+        background: #820BC6
+        border-radius: 3px
+        font-family: $font-bold
+        font-size: 18px
+        color: #fff
+        padding: 15px 45px
+        &:hover
+            animation: rotate 2s
+
+        @keyframes rotate
+            20%
+                transform: rotate(10deg)
+            50%
+                transform: rotate(-10deg)
+            80%
+                transform: rotate(10deg)
+            100%
+                transform: rotate(-10deg)
+
+main
+    padding-top: 80px
+    .breadcrumbs ul
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        margin-bottom: 80px
+        li:not(:last-child)
+            margin-right: 40px
+            position: relative
+            &:after
+                content: ''
+                display: block
+                background-image: url('../../img/svg/icon_right-arrow.svg')
+                width: 10px
+                height: 10px
+                position: absolute
+                right: -20px
+                top: 50%
+                transform: translateY(-50%)
+        a
+            font-size: 16px
+            color: #7c7d8d
+            &:hover
+                border-bottom: 1px solid #7c7d8d
+            &.current
+                color: $color-default
+                &:hover
+                    border-bottom: 1px solid $color-default
+
+    .main-blog
+        margin-bottom: 65px
+        background: url('../../img/bg/bg_main-post.jpg') center center/cover
+        box-shadow: 0px 10px 30px rgba(38, 78, 238, 0.1)
+        border-radius: 15px
+        transition: transform .7s
+        &:hover
+            transform: scale(1.08)
+        a
+            display: block
+            padding: 140px 20px 35px 100px
+        p
+            color: #fff
+            &.badge
+                background-color: #1ed660
+                border-radius: 3px
+                font-size: 16px
+                line-height: 18px
+                padding: 5px 20px
+                display: inline-block
+                margin-bottom: 10px
+            &.title
+                font-size: 36px
+                line-height: 48px
+                max-width: 55%
+                margin-bottom: 30px
+        .author
+            .img-wrapper
+                margin-bottom: 25px
+            p
+                font-size: 18px
+
+    .grid-blogs
+        display: flex
+        justify-content: flex-start
+        flex-wrap: wrap
+        .blog
+            background: #fff
+            border: 1px solid #eee
+            border-radius: 5px
+            overflow: hidden
+            height: 430px
+            width: 32%
+            margin-bottom: 30px
+            transition: transform .7s
+            &:hover
+                transform: scale(1.08)
+            &:not(:nth-child(3n))
+                margin-right: 2%
+            &.blog-special
+                a
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    align-items: flex-end
+                    > img
+                        position: absolute
+                        z-index: 1
+                        width: 100%
+                        height: 100%
+                    .info
+                        position: relative
+                        z-index: 2
+                        height: 50%
+                        p
+                            color: #fff
+            a
+                display: block
+                height: 100%
+                width: 100%
+                .picture
+                    width: 100%
+                    height: 50%
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+
+                .info
+                    text-align: center
+                    position: relative
+                    height: calc(50% + 37px)
+                    padding: 0 15px
+                    p
+                        color: #7c7d8d
+                    .author
+                        margin-bottom: 30px
+                        .img-wrapper
+                            margin: 0 auto
+                            margin-top: -37px
+                            margin-bottom: 10px
+                        p
+                            font-size: 14px
+                    .title
+                        font-size: 18px
+                        line-height: 25px
+                        color: #263035
+                    .date
+                        position: absolute
+                        bottom: 30px
+                        left: 0
+                        width: 100%
+                        p
+                            font-size: 14px
