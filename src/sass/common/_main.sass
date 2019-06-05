@@ -5,7 +5,7 @@ header
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 30px 5em
+    padding: 30px 2em
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05)
 
     .logo
@@ -54,6 +54,7 @@ header
 
 main
     padding-top: 80px
+    padding-bottom: 285px
     .breadcrumbs ul
         display: flex
         justify-content: flex-start
@@ -186,3 +187,133 @@ main
                         width: 100%
                         p
                             font-size: 14px
+
+    .pagination
+        margin-top: 55px
+        text-align: center
+        .pagination-wrapper
+            background-color: #fff
+            border-radius: 5px
+            overflow: hidden
+            display: inline-block
+            ul
+                display: flex
+                align-items: center
+                li
+                    &:first-child, &:last-child
+                        a
+                            padding: 15px 30px
+                    &:not(:last-child)
+                        border-right: 1px solid #f6f6f6
+                    &.active, &:hover
+                        background-color: $color-default
+                        a
+                            color: #fff
+                    a
+                        color: $color-default
+                        font-size: 17px
+                        color: #820bc6
+                        display: block
+                        padding: 15px 20px
+
+footer
+    .subscribe
+        background-color: $color-default
+        display: flex
+        justify-content: space-between
+        align-items: center
+        top: -150px
+        padding: 80px 100px
+        box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.05)
+        border-radius: 10px
+        position: relative
+        overflow: hidden
+        &:after
+            content: ''
+            display: block
+            height: 2000px
+            width: 90px
+            background-color: rgba(255, 255, 255, .07)
+            transform: rotate(-45deg)
+            position: absolute
+            right: -190px
+            top: -500px
+            z-index: 1
+        p
+            font-size: 36px
+            line-height: 48px
+            color: #fff
+            max-width: 45%
+
+        .input-wrapper
+            background-color: rgba(245, 249, 255, .1)
+            border-radius: 5px
+            position: relative
+            z-index: 2
+            display: flex
+            padding: 15px
+            min-width: 440px
+            input
+                background-color: #fff
+                border: 1px solid #e6e8f6
+                border-radius: 7px
+                padding: 20px
+                padding-right: 105px
+                font-size: 17px
+                width: 100%
+                &::-webkit-input-placeholder
+                    font-size: inherit
+                    color: #979ea5
+                &::-moz-placeholder
+                    font-size: inherit
+                    color: #979ea5
+                &:-ms-input-placeholder
+                    font-size: inherit
+                    color: #979ea5
+                &:-moz-placeholder
+                    font-size: inherit
+                    color: #979ea5
+
+            button
+                background-color: $color-default
+                border-radius: 5px
+                padding: 25px 30px
+                margin: 5px 0
+                margin-left: -85px
+                img
+                    transition: transform .9s
+                &:hover
+                    img
+                        transform: scale(1.9)
+
+    .info
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding-bottom: 100px
+        p, a, li
+            color: rgba(124, 125, 141, .8)
+        > div:first-child
+            max-width: 35%
+            img
+                margin-bottom: 25px
+            p
+                font-size: 17px
+                line-height: 30px
+        p.title
+            font-size: 20px
+            color: #263035
+            margin-bottom: 20px
+        li
+            margin-bottom: 15px
+            a:hover
+                border-bottom: 1px solid rgba(124, 125, 141, .8)
+
+    .copyright
+        text-align: center
+        padding: 25px 0
+        border-top: 1px solid rgba(171, 173, 176, .15)
+        p
+            font-size: 15px
+            line-height: 30px
+            color: rgba(38, 48, 53, .6)

@@ -119,7 +119,7 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 5em;
+  padding: 30px 2em;
   -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); }
   header .logo {
@@ -200,7 +200,8 @@ header {
             transform: rotate(-10deg); } }
 
 main {
-  padding-top: 80px; }
+  padding-top: 80px;
+  padding-bottom: 285px; }
   main .breadcrumbs ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -373,3 +374,172 @@ main {
             width: 100%; }
             main .grid-blogs .blog a .info .date p {
               font-size: 0.875rem; }
+  main .pagination {
+    margin-top: 55px;
+    text-align: center; }
+    main .pagination .pagination-wrapper {
+      background-color: #fff;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      overflow: hidden;
+      display: inline-block; }
+      main .pagination .pagination-wrapper ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        main .pagination .pagination-wrapper ul li:first-child a, main .pagination .pagination-wrapper ul li:last-child a {
+          padding: 15px 30px; }
+        main .pagination .pagination-wrapper ul li:not(:last-child) {
+          border-right: 1px solid #f6f6f6; }
+        main .pagination .pagination-wrapper ul li.active, main .pagination .pagination-wrapper ul li:hover {
+          background-color: #820bc6; }
+          main .pagination .pagination-wrapper ul li.active a, main .pagination .pagination-wrapper ul li:hover a {
+            color: #fff; }
+        main .pagination .pagination-wrapper ul li a {
+          color: #820bc6;
+          font-size: 1.0625rem;
+          color: #820bc6;
+          display: block;
+          padding: 15px 20px; }
+
+footer .subscribe {
+  background-color: #820bc6;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -150px;
+  padding: 80px 100px;
+  -webkit-box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  position: relative;
+  overflow: hidden; }
+  footer .subscribe:after {
+    content: '';
+    display: block;
+    height: 2000px;
+    width: 90px;
+    background-color: rgba(255, 255, 255, 0.07);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    position: absolute;
+    right: -190px;
+    top: -500px;
+    z-index: 1; }
+  footer .subscribe p {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    color: #fff;
+    max-width: 45%; }
+  footer .subscribe .input-wrapper {
+    background-color: rgba(245, 249, 255, 0.1);
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+    min-width: 440px; }
+    footer .subscribe .input-wrapper input {
+      background-color: #fff;
+      border: 1px solid #e6e8f6;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      padding: 20px;
+      padding-right: 105px;
+      font-size: 1.0625rem;
+      width: 100%; }
+      footer .subscribe .input-wrapper input::-webkit-input-placeholder {
+        font-size: inherit;
+        color: #979ea5; }
+      footer .subscribe .input-wrapper input::-moz-placeholder {
+        font-size: inherit;
+        color: #979ea5; }
+      footer .subscribe .input-wrapper input:-ms-input-placeholder {
+        font-size: inherit;
+        color: #979ea5; }
+      footer .subscribe .input-wrapper input:-moz-placeholder {
+        font-size: inherit;
+        color: #979ea5; }
+    footer .subscribe .input-wrapper button {
+      background-color: #820bc6;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      padding: 25px 30px;
+      margin: 5px 0;
+      margin-left: -85px; }
+      footer .subscribe .input-wrapper button img {
+        -webkit-transition: -webkit-transform .9s;
+        transition: -webkit-transform .9s;
+        -o-transition: transform .9s;
+        transition: transform .9s;
+        transition: transform .9s, -webkit-transform .9s; }
+      footer .subscribe .input-wrapper button:hover img {
+        -webkit-transform: scale(1.9);
+            -ms-transform: scale(1.9);
+                transform: scale(1.9); }
+
+footer .info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 100px; }
+  footer .info p, footer .info a, footer .info li {
+    color: rgba(124, 125, 141, 0.8); }
+  footer .info > div:first-child {
+    max-width: 35%; }
+    footer .info > div:first-child img {
+      margin-bottom: 25px; }
+    footer .info > div:first-child p {
+      font-size: 1.0625rem;
+      line-height: 1.875rem; }
+  footer .info p.title {
+    font-size: 1.25rem;
+    color: #263035;
+    margin-bottom: 20px; }
+  footer .info li {
+    margin-bottom: 15px; }
+    footer .info li a:hover {
+      border-bottom: 1px solid rgba(124, 125, 141, 0.8); }
+
+footer .copyright {
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid rgba(171, 173, 176, 0.15); }
+  footer .copyright p {
+    font-size: 0.9375rem;
+    line-height: 1.875rem;
+    color: rgba(38, 48, 53, 0.6); }
+
+@media (max-width: 1600px) {
+  header .content {
+    width: auto;
+    text-align: center; } }
